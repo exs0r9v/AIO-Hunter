@@ -47,8 +47,8 @@ Depoyu klonlayın ve scripti çalıştırın:
 
 ```bash
 # Repoyu klonlayın
-git clone [https://github.com/KULLANICI_ADINIZ/REPO_ADI.git](https://github.com/KULLANICI_ADINIZ/REPO_ADI.git)
-cd REPO_ADI
+git clone https://github.com/exs0r9v/AIO-Hunter.git
+cd AIO-Hunter
 
 # Scripti çalıştırın (Root yetkisi gerekebilir)
-sudo python3 script_adi.py
+sudo python3 aio-hunter.py
