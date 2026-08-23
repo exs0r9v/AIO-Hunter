@@ -1,4 +1,3 @@
-
 # 🛡️ Automated Recon & Vulnerability Scanner
 
 <div align="center">
@@ -8,28 +7,28 @@
   <img src="https://img.shields.io/badge/Security-Pentesting-red?style=for-the-badge&logo=kalilinux&logoColor=white">
 
   <p><b>Made by exs0r</b></p>
-  <p>Siber güvenlik meraklıları ve penetration testerlar için geliştirilmiş, popüler recon araçlarını tek bir menüde birleştiren akıllı otomasyon scripti.</p>
+  <p>An intelligent automation script designed for cybersecurity enthusiasts and penetration testers, combining popular recon tools into a single interactive menu.</p>
 
 </div>
 
 ---
 
-## 🚀 Özellikler
+## 🚀 Features
 
-* **1] Port Taraması (Nmap):** Hedef IP/Domain üzerinde hızlı versiyon tespiti, tüm port taraması veya agresif tarama modları.
-* **2] Subdomain Taraması (Subfinder):** Hedef sisteme ait alt alan adlarını bulma ve isterseniz `.txt` dosyasına kaydetme.
-* **3] Otomatik Sızma Testi Pipeline (Subfinder + Httpx + Subzy + Nuclei):** 
-  * Subdomainleri toplar ve canlı olanları (`live.txt`) filtreler.
-  * Canlı adreslerde **Subdomain Takeover** taraması yapar (`takeover.txt`).
-  * Zafiyet taraması gerçekleştirir (`nuclei_sonucları.txt`).
-  * *Akıllı Fallback:* Eğer canlı subdomain bulunamazsa, otomatik olarak ana hedefi doğrudan `nuclei` ile tarar.
-* **4] WAF Taraması (Wafw00f):** Hedef web uygulamasında Web Application Firewall (WAF) olup olmadığını tespit eder.
+* **1] Port Scanning (Nmap):** Fast version detection, full port scanning, or aggressive scan modes on target IPs/domains.
+* **2] Subdomain Enumeration (Subfinder):** Discover subdomains belonging to the target system and optionally save them to a `.txt` file.
+* **3] Automated Pentesting Pipeline (Subfinder + Httpx + Subzy + Nuclei):** 
+  * Gathers subdomains and filters live hosts (`live.txt`).
+  * Performs **Subdomain Takeover** checks on live targets (`takeover.txt`).
+  * Executes vulnerability scanning (`nuclei_sonucları.txt`).
+  * *Smart Fallback:* If no live subdomains are found, it automatically switches to scan the root target directly with `nuclei`.
+* **4] WAF Detection (Wafw00f):** Detects if a Web Application Firewall (WAF) is protecting the target web application.
 
 ---
 
-## 📦 Gereksinimler
+## 📦 Prerequisites
 
-Bu aracın sorunsuz çalışabilmesi için sisteminizde aşağıdaki araçların kurulu ve PATH ortam değişkenine ekli olması gerekir:
+To run this tool smoothly, ensure the following tools are installed on your system and added to your PATH environment variable:
 
 * Python 3.x
 * [Nmap](https://nmap.org/)
@@ -41,14 +40,19 @@ Bu aracın sorunsuz çalışabilmesi için sisteminizde aşağıdaki araçların
 
 ---
 
-## ⚙️ Kurulum ve Çalıştırma
+## ⚙️ Installation & Usage
 
-Depoyu klonlayın ve scripti çalıştırın:
+Clone the repository and run the script:
 
 ```bash
-# Repoyu klonlayın
-git clone https://github.com/exs0r9v/AIO-Hunter.git
+# Clone the repository
+git clone [https://github.com/exs0r9v/AIO-Hunter.git](https://github.com/exs0r9v/AIO-Hunter.git)
 cd AIO-Hunter
 
-# Scripti çalıştırın (Root yetkisi gerekebilir)
+# Run the script (Root privileges may be required)
 sudo python3 aio-hunter.py
+
+
+
+Disclaimer
+This tool is developed for educational purposes and authorized security testing only. Unauthorized scanning of targets you do not own or have explicit permission to test is illegal. The user assumes all responsibility for any misuse or damage caused by this program.
